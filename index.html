@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Codice fiscale</title>
+        <link rel="stylesheet" href="styles.css" />
+        <script type="text/javascript" src="scripts.js"></script>
+    </head>
+    <body>
+        <fieldset class="contentField">
+            <form action="" method="POST">
+                <label for="nameTxt">Nome:</label>
+                <input type="text" id="nameTxt" />
+                <p class="wrongAlert" id="wrong1"></p>
+
+                <label for="surnameTxt">Cognome:</label>
+                <input type="text" id="surnameTxt" />
+                <p class="wrongAlert" id="wrong2"></p>
+
+                <label for="idTxt">Codice fiscale:</label>
+                <input type="text" id="idTxt" />
+                <p class="wrongAlert" id="wrong3"></p>
+
+                <label for="dateTxt">Data di nascita:</label>
+                <input type="date" id="dateTxt" placeholder="gg/mm/aaaa" />
+                <p for="nameTxt" class="wrongAlert" id="wrong4"></p>
+
+                <fieldset class="radialField">
+                    <legend>Gender</legend>
+                    <label for="mRad">m</label>
+                    <input type="radio" id="mRad" name="gender" />
+                    <label for="mRad">f</label>
+                    <input type="radio" id="fRad" name="gender" />
+                </fieldset>
+                <label for="emailTxt">Email:</label>
+                <input type="text" id="emailTxt" />
+                <p class="wrongAlert" id="wrong5"></p>
+
+                <label for="idTxt">User ID:</label>
+                <input type="text" id="usrIdTxt" />
+                <p class="wrongAlert" id="wrong6"></p>
+
+                <label for="psw1Txt">Password 1:</label>
+                <input type="password" id="psw1Txt" />
+                <p class="wrongAlert" class="wrongAlert" id="wrong7"></p>
+
+                <label for="psw2Txt">Password 2:</label>
+                <input type="password" id="psw2Txt" />
+                <p class="wrongAlert" id="wrong8"></p>
+
+                <input
+                    type="button"
+                    value="invia"
+                    id="inviaBtn"
+                    onclick="send();"
+                />
+            </form>
+        </fieldset>
+    </body>
+</html>
